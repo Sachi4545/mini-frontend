@@ -27,7 +27,7 @@ function Register() {
       
 
       const res = await axios.post(
-        "http://localhost:5000/users/register",
+        "https://mini-n54f.onrender.com/users/register",
         formData
       );
 

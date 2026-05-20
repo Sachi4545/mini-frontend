@@ -18,7 +18,7 @@ function Login() {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/users/login",
+        "https://mini-n54f.onrender.com/users/login",
         {
           email,
           password
