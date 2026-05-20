@@ -39,15 +39,17 @@ function Register() {
 
       navigate("/dashboard");
 
-    } catch(error){
+     } catch(error){
 
-      alert(
-        error.response?.data?.message ||
-        "Register Failed"
-      );
+    console.log(error);
+
+    console.log(error.response);
+
+    alert(
+        JSON.stringify(error.response?.data)
+    );
 
     }
-
   };
 
 
