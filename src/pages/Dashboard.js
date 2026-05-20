@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const API = "https://mini-n54f.onrender.com";
+
 
 function Dashboard() {
 
