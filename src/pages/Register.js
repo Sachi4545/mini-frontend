@@ -18,18 +18,14 @@ function Register() {
 
     try {
 
-      const formData = new FormData();
-
-      formData.append("name", name);
-      formData.append("email", email);
-      formData.append("password", password);
-
-      
-
-      const res = await axios.post(
+            const res = await axios.post(
         "https://mini-n54f.onrender.com/users/register",
-        formData
-      );
+        {
+            name,
+            email,
+            password
+        }
+        );
 
       localStorage.setItem(
         "token",
